@@ -63,9 +63,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def draw(self, qp: QPainter):
         a = randint(10, 100)
-        r = 255
-        g = 255
-        b = 0
+        r = randint(0, 255)
+        g = randint(0, 255)
+        b = randint(0, 225)
         qp.setBrush(QColor(r, g, b))
         qp.drawEllipse(randint(0, 200), randint(0, 200), a, a)
 
